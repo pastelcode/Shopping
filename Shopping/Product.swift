@@ -13,7 +13,7 @@ struct Product: Codable, Hashable, Identifiable {
     let description: String
     let price: Float
     let imagesUrls: [URL]
-    let categoryId: String
+    let categoryId: UUID
     let creationDate: Date
     let updateDate: Date
     
