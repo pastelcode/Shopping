@@ -13,8 +13,24 @@ struct LandingView: View {
             VStack(alignment: .leading) {
                 Text("Categories")
                     .font(.title)
-                    .padding()
+                    .padding(.horizontal)
+                
                 CategoriesCarousel()
+                    .padding(.bottom)
+                
+                HStack {
+                    Text("Products")
+                        .font(.title)
+                        .padding(.leading)
+                    Spacer()
+                    Button("See all") {
+                        print("User desires to see all products")
+                    }
+                    .padding(.trailing)
+                }
+
+                ProductsGrid()
+                    .padding(.horizontal)
             }
         }
     }

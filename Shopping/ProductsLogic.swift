@@ -13,7 +13,7 @@ final class ProductsLogic {
     
     let persistence: PersistenceInteractor
     
-    var products: [Product]
+    var products: [Product]?
     
 //    ERROR FIELDS
     var showErrorAlert = false
@@ -24,7 +24,7 @@ final class ProductsLogic {
         do {
             self.products = try persistence.loadProducts()
         } catch {
-            self.products = []
+            self.products = nil
             self.errorMessage = error.localizedDescription
             self.showErrorAlert.toggle()
         }

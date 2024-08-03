@@ -25,6 +25,8 @@
 		63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */; };
 		63733D192C5E093D00B2BDDD /* CategoriesCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */; };
 		63733D1B2C5E21E100B2BDDD /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D1A2C5E21E100B2BDDD /* LandingView.swift */; };
+		63733D1E2C5E27B700B2BDDD /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D1D2C5E27B700B2BDDD /* ProductCard.swift */; };
+		63733D202C5E325500B2BDDD /* ProductsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D1F2C5E325500B2BDDD /* ProductsGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601WithFractionalSecondsDateDecoder.swift; sourceTree = "<group>"; };
 		63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCarousel.swift; sourceTree = "<group>"; };
 		63733D1A2C5E21E100B2BDDD /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		63733D1D2C5E27B700B2BDDD /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		63733D1F2C5E325500B2BDDD /* ProductsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				63733D132C589ECA00B2BDDD /* CategoryBanner.swift */,
 				63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */,
 				63733D1A2C5E21E100B2BDDD /* LandingView.swift */,
+				63733D1D2C5E27B700B2BDDD /* ProductCard.swift */,
+				63733D1F2C5E325500B2BDDD /* ProductsGrid.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -244,7 +250,9 @@
 				63733D142C589ECA00B2BDDD /* CategoryBanner.swift in Sources */,
 				63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */,
 				63733D122C589E7A00B2BDDD /* MainView.swift in Sources */,
+				63733D202C5E325500B2BDDD /* ProductsGrid.swift in Sources */,
 				63733CEC2C57497900B2BDDD /* ShoppingApp.swift in Sources */,
+				63733D1E2C5E27B700B2BDDD /* ProductCard.swift in Sources */,
 				63733D022C588CD500B2BDDD /* PersistenceInteractor.swift in Sources */,
 				63733D082C58981D00B2BDDD /* PreviewPersistence.swift in Sources */,
 				63733D0E2C589C2D00B2BDDD /* ViewModel.swift in Sources */,

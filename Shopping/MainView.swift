@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    enum SelectedTab {
+    private enum Tab {
         case featured
         case cart
         case profile
@@ -16,7 +16,7 @@ struct MainView: View {
     
     @Environment(ViewModel.self) private var viewModel
     
-    @State private var selectedTab: SelectedTab = .featured
+    @State private var selectedTab: Tab = .featured
     
     private var navigationTitle: String {
         switch selectedTab {
@@ -35,17 +35,17 @@ struct MainView: View {
                 .tabItem {
                     Label("Featured", systemImage: "star")
                 }
-                .tag(SelectedTab.featured)
+                .tag(Tab.featured)
             ContentUnavailableView("In construction...", systemImage: "hammer")
                 .tabItem {
                     Label("Cart", systemImage: "cart")
                 }
-                .tag(SelectedTab.cart)
+                .tag(Tab.cart)
             ContentUnavailableView("In construction...", systemImage: "hammer")
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
-                .tag(SelectedTab.profile)
+                .tag(Tab.profile)
         }
         .navigationTitle(navigationTitle)
     }
