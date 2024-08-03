@@ -11,11 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             MainView()
-                .navigationTitle("Shopping")
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ViewModel.preview)
 }

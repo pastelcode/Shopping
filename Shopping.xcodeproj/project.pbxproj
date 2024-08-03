@@ -24,6 +24,7 @@
 		63733D142C589ECA00B2BDDD /* CategoryBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D132C589ECA00B2BDDD /* CategoryBanner.swift */; };
 		63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */; };
 		63733D192C5E093D00B2BDDD /* CategoriesCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */; };
+		63733D1B2C5E21E100B2BDDD /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D1A2C5E21E100B2BDDD /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		63733D132C589ECA00B2BDDD /* CategoryBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBanner.swift; sourceTree = "<group>"; };
 		63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601WithFractionalSecondsDateDecoder.swift; sourceTree = "<group>"; };
 		63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCarousel.swift; sourceTree = "<group>"; };
+		63733D1A2C5E21E100B2BDDD /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				63733D112C589E7A00B2BDDD /* MainView.swift */,
 				63733D132C589ECA00B2BDDD /* CategoryBanner.swift */,
 				63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */,
+				63733D1A2C5E21E100B2BDDD /* LandingView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				63733D0B2C589B3700B2BDDD /* ProductsLogic.swift in Sources */,
 				63733CEE2C57497900B2BDDD /* ContentView.swift in Sources */,
+				63733D1B2C5E21E100B2BDDD /* LandingView.swift in Sources */,
 				63733CFF2C588AE300B2BDDD /* Product.swift in Sources */,
 				63733D142C589ECA00B2BDDD /* CategoryBanner.swift in Sources */,
 				63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */,
