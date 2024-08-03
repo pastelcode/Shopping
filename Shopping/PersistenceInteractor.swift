@@ -14,11 +14,13 @@ protocol PersistenceInteractor {
 
 struct Persistence: PersistenceInteractor {
     func loadCategories() throws -> [Category] {
-        <#code#>
+//        TODO: Implement method
+        return []
     }
     
     func loadProducts() throws -> [Product] {
-        <#code#>
+//        TODO: Implement method
+        return []
     }
     
     

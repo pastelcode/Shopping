@@ -18,13 +18,24 @@ struct PreviewPersistence: PersistenceInteractor {
     
     func loadCategories() throws -> [Category] {
         let data = try Data(contentsOf: categoriesURL)
-        return try JSONDecoder().decode([Category].self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601withOptionalFractionalSeconds
+        return try decoder.decode([Category].self, from: data)
     }
     
     func loadProducts() throws -> [Product] {
         let data = try Data(contentsOf: productsURL)
-        return try JSONDecoder().decode([Product].self, from: data)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601withOptionalFractionalSeconds
+        return try decoder.decode([Product].self, from: data)
     }
+}
+
+extension ViewModel {
+    static let preview = ViewModel(
+        productsLogic: ProductsLogic(persistence: PreviewPersistence()),
+        categoriesLogic: CategoriesLogic(persistence: PreviewPersistence())
+    )
 }
 
 extension Product {
@@ -48,7 +59,7 @@ extension Category {
     static let forPreview = Category(
         id: UUID(),
         name: "clothes",
-        coverUrl: URL(string: "https://i.imgur.com/QkIa5tT.jpeg")!,
+        coverURL: URL(string: "https://i.imgur.com/QkIa5tT.jpeg")!,
         creationDate: .now,
         updateDate: .now
     )

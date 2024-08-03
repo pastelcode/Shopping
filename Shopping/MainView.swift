@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct MainView: View {
+    @Environment(ViewModel.self) private var viewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment: .leading) {
+                Text("Categories")
+                    .font(.title)
+                    .padding()
+                CategoriesCarousel()
+            }
+        }
     }
 }
 
 #Preview {
     MainView()
+        .environment(ViewModel.preview)
 }
+
+

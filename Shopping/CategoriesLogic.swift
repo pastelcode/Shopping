@@ -13,7 +13,7 @@ final class CategoriesLogic {
     
     let persistence: PersistenceInteractor
     
-    var categories: [Category]
+    var categories: [Category]?
     
 //    ERROR FIELDS
     var showErrorAlert = false
@@ -24,7 +24,7 @@ final class CategoriesLogic {
         do {
             self.categories = try persistence.loadCategories()
         } catch {
-            self.categories = []
+            self.categories = nil
             self.errorMessage = error.localizedDescription
             self.showErrorAlert.toggle()
         }

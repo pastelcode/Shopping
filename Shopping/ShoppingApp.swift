@@ -12,6 +12,7 @@ struct ShoppingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(ViewModel())
         }
     }
 }

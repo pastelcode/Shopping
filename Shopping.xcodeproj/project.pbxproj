@@ -20,6 +20,10 @@
 		63733D0B2C589B3700B2BDDD /* ProductsLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D0A2C589B3700B2BDDD /* ProductsLogic.swift */; };
 		63733D0E2C589C2D00B2BDDD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D0D2C589C2D00B2BDDD /* ViewModel.swift */; };
 		63733D102C589C4A00B2BDDD /* CategoriesLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D0F2C589C4A00B2BDDD /* CategoriesLogic.swift */; };
+		63733D122C589E7A00B2BDDD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D112C589E7A00B2BDDD /* MainView.swift */; };
+		63733D142C589ECA00B2BDDD /* CategoryBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D132C589ECA00B2BDDD /* CategoryBanner.swift */; };
+		63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */; };
+		63733D192C5E093D00B2BDDD /* CategoriesCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		63733D0A2C589B3700B2BDDD /* ProductsLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsLogic.swift; sourceTree = "<group>"; };
 		63733D0D2C589C2D00B2BDDD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		63733D0F2C589C4A00B2BDDD /* CategoriesLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesLogic.swift; sourceTree = "<group>"; };
+		63733D112C589E7A00B2BDDD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		63733D132C589ECA00B2BDDD /* CategoryBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBanner.swift; sourceTree = "<group>"; };
+		63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601WithFractionalSecondsDateDecoder.swift; sourceTree = "<group>"; };
+		63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCarousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 		63733CEA2C57497900B2BDDD /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				63733D152C5DFE4800B2BDDD /* Utils */,
 				63733CEB2C57497900B2BDDD /* ShoppingApp.swift */,
 				63733D0C2C589C2300B2BDDD /* ViewModel */,
 				63733D092C589B2800B2BDDD /* ModelLogic */,
@@ -104,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				63733CED2C57497900B2BDDD /* ContentView.swift */,
+				63733D112C589E7A00B2BDDD /* MainView.swift */,
+				63733D132C589ECA00B2BDDD /* CategoryBanner.swift */,
+				63733D182C5E093D00B2BDDD /* CategoriesCarousel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -140,6 +152,14 @@
 				63733D0D2C589C2D00B2BDDD /* ViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		63733D152C5DFE4800B2BDDD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				63733D162C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +237,15 @@
 				63733D0B2C589B3700B2BDDD /* ProductsLogic.swift in Sources */,
 				63733CEE2C57497900B2BDDD /* ContentView.swift in Sources */,
 				63733CFF2C588AE300B2BDDD /* Product.swift in Sources */,
+				63733D142C589ECA00B2BDDD /* CategoryBanner.swift in Sources */,
+				63733D172C5DFEB600B2BDDD /* ISO8601WithFractionalSecondsDateDecoder.swift in Sources */,
+				63733D122C589E7A00B2BDDD /* MainView.swift in Sources */,
 				63733CEC2C57497900B2BDDD /* ShoppingApp.swift in Sources */,
 				63733D022C588CD500B2BDDD /* PersistenceInteractor.swift in Sources */,
 				63733D082C58981D00B2BDDD /* PreviewPersistence.swift in Sources */,
 				63733D0E2C589C2D00B2BDDD /* ViewModel.swift in Sources */,
 				63733CFD2C5889FB00B2BDDD /* Category.swift in Sources */,
+				63733D192C5E093D00B2BDDD /* CategoriesCarousel.swift in Sources */,
 				63733D102C589C4A00B2BDDD /* CategoriesLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
